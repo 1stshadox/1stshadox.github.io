@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> DRIP STORE</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #ff4d00, #ff9500);
+      color: #000;
+    }
+
+    /* PRODUCTS GRID */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    /* PRODUCT CARD */
+    .product {
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+
+      height: 230px; /* SAME SIZE */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* PRODUCT IMAGE */
+    .product img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background: #ff4d00;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #ff9500;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      font-size: 14px;
+    }
+.product button {
+  width: 180px;
+}
+.ad-banner {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff6600, #ff9900);
+}
+
+.ad-card {
+  flex: 1;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+
+.ad-card:nth-child(1) { animation-delay: 0.2s; }
+.ad-card:nth-child(2) { animation-delay: 0.4s; }
+.ad-card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ad-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ad-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>K DRIP STORE 🧢</h2>
+    <div>🔥 Streetwear</div>
+  </nav>
+
+  <header>
+    <h1>Level Up Your Drip</h1>
+    <p>Shoes • Hoodies • Streetwear</p>
+  </header>
+
+  <section class="products">
+
+    <div class="product">
+      <img src="sneaker.jpg" alt="Air Street Sneakers">
+      <h3>Air Street Sneakers</h3>
+      <p>$120</p>
+      <a href="product 1.html">
+        <button>View Product</button>
+      </a>
+    </div>
+
+    <div class="product">
+      <img src="hoodie.jpg" alt="Oversized Hoodie">
+      <h3>Oversized Hoodie</h3>
+      <p>$75</p>
+      <a href="product 2.html">
+        <button>View Product</button>
+      </a>
+    </div>
+
+    <div class="product">
+      <img src="tee.jpg" alt="Classic Drip Tee">
+      <h3>Classic Drip Tee</h3>
+      <p>$40</p>
+<a href="product 3.html">
+<button>View Product</button>
+      </a>
+    </div>
+
+    <div class="product">
+      <img src="jogger.jpg" alt="Urban Joggers">
+      <h3>Urban Joggers</h3>
+      <p>$65</p>
+<a href="product 4.html">
+<button>View Product</button>
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Drip Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
